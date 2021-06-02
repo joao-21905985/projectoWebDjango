@@ -1,0 +1,254 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="authors" content=" JEFF FROM THE OVERWATCH TEAM">
+    <meta name="keywords" content="wow, mmo, mazing, humongus world, worldofwarcraft, best, game">
+    <meta name="description"
+          content="Website acerca de um dos melhores mmo alguma vez criados, e também um dos mais antigos. Website criado no decorrer de uma unidade curricular">
+    <meta name="disclaimer" content="toda a informação disponibilizada no website foi obtida em fontes oficias do jogo">
+
+    <title>WOW PROJECT</title>
+    <link rel="stylesheet" href="{% static 'pw_wowProj/css/styles.css' %}"/>
+
+    <title>WoW Project</title>
+    <link rel="shortcut icon" type="img/x-icon" href="{% static 'pw_wowProj/images/icon.png' %}"/>
+</head>
+
+<body class="quizzbody">
+<!--Header Section-->
+<header class="hordeheader">
+
+    <a href="{% url 'pw_wowProj:index' %}" class="logo"><img src="{% static 'pw_wowProj/images/wow.png' %}"
+                                                             alt="WOW Project">
+        <h1> W<span>P</span></h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="{% url 'pw_wowProj:index' %}" texto="Home">Home</a></li>
+            <li><a href="{% url 'pw_wowProj:human' %}" texto="Races">Races</a></li>
+            <li><a href="{% url 'pw_wowProj:quizz' %}" texto="Quizz">Quizz</a></li>
+            <li><a href="{% url 'pw_wowProj:info' %}" texto="Info">Info</a></li>
+        </ul>
+    </nav>
+</header>
+<!--End Header-->
+<section id="quizz">
+    <!--QUIZZ FORMS-->
+    <h1 class="section_title">Quizz</h1>
+
+    <form action="mailto:XXXXXX@gmail.com" method="post" name="Form PW">
+
+        <fieldset>
+            <legend>Identification:</legend>
+            <label>
+                Insert name here: <span>*</span> <input type="text" name="name"
+                                                        placeholder="Yer name here mate..." autocomplete="off"
+                                                        maxlength="20" autofocus required><br>
+            </label>
+
+            <label>
+                Insert second name here: <span>*</span> <input type="text" name="secondname"
+                                                               placeholder="Yer second name here mate..."
+                                                               autocomplete="off" maxlength="20" required><br>
+            </label>
+
+            <label>
+                Insert your email: <span>*</span><input type="email" name="email" placeholder="Insert valid email..."
+                                                        autocomplete="off" required><br>
+            </label>
+
+            <label>
+                Insert your phone number:
+                <input type="tel" name="telefone" placeholder="Ex: 99999-99-99" size="11" maxlength="11"
+                       autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"> <small>(Optional)</small><br><br>
+            </label>
+        </fieldset>
+    </form>
+</section>
+
+<form>
+    <!--PERGUNTAS-->
+
+    <fieldset>
+        <legend>Quizz</legend>
+
+        <!--Pergunta 1 -->
+        <br>
+        <label for="q1"><span>1.</span> Which form can dwarves take ? <span>*</span></label>
+
+        <input type="text" id="q1" name="question1" autocomplete="off" maxlength="10" required
+               placeholder="5 letter word"><br><br>
+        <hr>
+        <br><br>
+
+        <!--Pergunta 2 -->
+        <label for="q2"><span>2.</span> Orgrimmar was named after which of these heros?<span>*</span></label><br><br>
+
+        <label class="radio_container">Orc Azeroth
+            <input type="radio" checked="checked" id="Orc Azerothr" name="question2" required value="Orc Azeroth">
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container">Durotan Blighthammer
+            <input type="radio" checked="checked" id="Durotan Blighthammer" name="question2" required
+                   value="Durotan Blighthammer">
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container">Orgrim Doomhammer
+            <input type="radio" checked="checked" id="Orgrim Doomhammer" name="question2" required
+                   value="Orgrim Doomhammer">
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container">Garrosh Hellscream
+            <input type="radio" checked="checked" id="Garrosh Hellscream" name="question2" required
+                   value="Garrosh Hellscream">
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <!--Pergunta 3 -->
+        <label for="q3"><span>3.</span>Trolls are more proficient with which of these weapons? <span>*</span></label>
+        <br><br>
+
+
+        <label class="radio_container" for="weapon1"> Mace
+            <input type="checkbox" id="weapon1" name="weapon1" value="Mace" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon2"> Bow
+            <input type="checkbox" id="weapon2" name="weapon2" value="Bow" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon3"> Sword
+            <input type="checkbox" id="weapon3" name="weapon3" value="Sword" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon4"> Staff
+            <input type="checkbox" id="weapon4" name="weapon4" value="Staff" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon5"> Guns
+            <input type="checkbox" id="weapon5" name="weapon5" value="Guns" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon6"> Throwing Weapons
+            <input type="checkbox" id="weapon6" name="weapon6" value="Throwing Weapons" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon7"> Daggers
+            <input type="checkbox" id="weapon7" name="weapon7" value="Daggers" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="weapon8"> Bare Handed
+            <input type="checkbox" id="weapon8" name="weapon8" value="Bare Handed" required>
+            <span id="check" class="checkmark"></span>
+        </label>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!--Pergunta 4 -->
+
+        <label for="q4"><span>4.</span> Which colors are the most dominant in this conflict?<span>*</span> </label>
+        <input type="color" id="color1" name="color2" value="#000000" required>
+        <input type="color" id="color2" name="color2" value="#000000" required> <strong>click to choose</strong>
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!--Pergunta 5-->
+        <label for="q5"><span>5.</span> How many classes can Humans specialize in?<span>*</span> </label>
+        <input type="number" id="horas" name="horas" min="0" max="5" value="0" required step="1"> <strong>[Hint: check
+        the gif]</strong>
+        </small> <br><br>
+        <hr>
+        <br><br>
+
+
+        <!--Pergunta 6 -->
+
+
+        <label for="q6"><span>6.</span> In stormwind you drive in which side of the road?<span>*</span> </label><br><br>
+
+        <label class="radio_container" for="conduzEsq">Left side
+            <input type="radio" id="conduzEsq" name="conduz" value="Esquerdo" required>
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="conduzDrt">Right side
+            <input type="radio" id="conduzDrt" name="conduz" value="Direito" required>
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+        <label class="radio_container" for="conduzDrt">You don't
+            <input type="radio" id="rightanswer" name="conduz" value="not" required>
+            <span style="border-radius: 50%" class="checkmark"></span>
+        </label>
+
+
+        <center>
+            <br><br>
+            <hr>
+            <br><br>
+            <input type="submit" value="Submit All" title="Submit Answers" alt="Submit">
+            <input type="reset" value="Reset All" title="Reset Fields">
+            <br><br>
+        </center>
+
+
+    </fieldset>
+</form>
+</section>
+
+
+<!--Start Footer-->
+<footer id="footer">
+    <div class="footerred container" id="red">
+        <div>
+            <h1 class="section_title"><span>P</span>rogramação <span>W</span>eb</h1>
+        </div>
+        <h2>Ano lectivo <span>20</span>/<span>21</span></h2>
+        <div class="footicon">
+            <div class="footitem">
+                <a href="https://www.ulusofona.pt/" target="_blank"><img
+                        src="{% static 'pw_wowProj/images/ulusofona.jpg' %}"></a>
+
+            </div>
+            <div class="footitem">
+                <a href="https://worldofwarcraft.com/en-gb/character/eu/stormscale/yv%C3%AF" target="_blank"><img
+                        src="{% static 'pw_wowProj/images/accounts.png' %}"></a>
+
+            </div>
+            <div class="footitem">
+                <a href="https://worldofwarcraft.com/en-gb/character/eu/aggra-portugu%C3%AAs/barlow"
+                   target="_blank"><img src="{% static 'pw_wowProj/images/accounts.png' %}"></a>
+
+            </div>
+
+        </div>
+        <p>-- Trabalho realizado no ambito escolar com objectivo educacional --</p>
+    </div>
+
+</footer>
+<!--End Footer-->
+</body>

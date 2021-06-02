@@ -1,0 +1,114 @@
+{% extends 'pw_wowProj/base.html' %}
+{%  load static %}
+{% block main %}
+    <!--Intro Section-->
+    <section id="intro">
+        <div class="intro container">
+            <div>
+                <h1>World Of Warcraft<span></span></h1>
+                <h1>Project<span></span></h1>
+                <center>
+                    <a href="https://worldofwarcraft.com" type="button" class="buttonIntro">
+                        Official WebSite
+                    </a>
+                </center>
+            </div>
+        </div>
+    </section>
+    <!--End of Entry Section-->
+
+    <!--Start About-->
+
+    <main id="about">
+        <div class="about container">
+            <h1 class="section_title"><span>A</span>bout the <span>Game</span></h1>
+            <div class="borderTest">
+                <p>
+                    When playing for the first time, subscribers choose their race and class. There are two primary
+                    factions in the game, the Alliance and the Horde. The races of the Alliance include: humans, gnomes,
+                    dwarves, night elves, and dranei. The races available
+                    to the Horde are: orcs, forsaken (undead), tauren, trolls, and blood elves. Once players choose
+                    their faction and race, they choose their class (or role) in the game. The available classes are:
+                    druid, priest, mage, shaman, warlock,
+                    warrior, paladin, and hunter. Players start at level one and gain experience (XP) for completing
+                    quests while exploring increasingly difficult and dangerous areas. They progress to a maximum level
+                    of 80. While doing so, players can
+                    form groups of up to five members for some challenges while forming groups as large as 25 (raid) for
+                    more challenging situations. In addition to these, players can form player guilds with individuals
+                    to collectively plan and organize
+                    events. World of Warcraft also has a thriving in-world econonmy. Completing quests also often
+                    includes a monetary reward in addition to the experience awarded. Players can also create and sell
+                    items they create in-world using an auction
+                    house that functions in a similar way to eBay.</p>
+            </div>
+        </div>
+    </main>
+
+    <!--End About-->
+
+    <!--Start Factions-->
+
+    <article id="factions">
+        <div class="factions_container">
+            <div class="factions_top">
+                <h1 class="section_title">Fact<span>i</span>ons</h1>
+                <p>
+                    The term faction is also used to refer specifically to the two playable factions in World of
+                    Warcraft: the Alliance and the Horde. Each playable race is specifically aligned with one faction or
+                    the other, and all player characters of that race automatically
+                    belong to that faction.
+                </p>
+            </div>
+
+            <div class="factions_bottom">
+                <div class="faction_card_horde">
+                    <div class="insignia">
+                        <figure>
+                            <img src="{% static 'pw_wowProj/images/hordeLogo.png' %}" alt="Horde Insignia"/>
+                        </figure>
+
+                    </div>
+
+                    <div class="description">
+                        <h2>Horde</h2>
+                        <p>
+                            The Horde is made up of orcs, forsaken, tauren, trolls, blood elves, and most recently,
+                            goblins. Misunderstood and cast aside, these diverse and powerful races strive to overcome
+                            their differences and unite as one in order to win freedom for their people
+                            and prosper in a land that has come to hate them. In the Horde, action and strength are
+                            valued above diplomacy, and its leaders earn respect by the blade, wasting no time with
+                            politics.
+                        </p>
+
+                        <a href="{% url 'pw_wowProj:orc'%}" type="button" class="button">More...</a>
+                    </div>
+                </div>
+
+                <div class="faction_card_alliance">
+                    <div class="insignia">
+                        <figure>
+                            <img src="{% static 'pw_wowProj/images/allianceLogo.png' %}" alt="Horde Insignia"/>
+                        </figure>
+
+                    </div>
+
+                    <div class="description">
+                        <h2>Alliance</h2>
+                        <p>
+                            Humans, night elves, dwarves, gnomes, draenei, and the savage worgen make up the illustrious
+                            Alliance. Proud and noble, courageous and wise, these races work together to preserve order
+                            in Azeroth. The Alliance is driven by honor and tradition. Its rulers
+                            are champions of justice, hope, knowledge, and faith. In a time when chaos and uncertainty
+                            reign, the Alliance remains steadfast in its determination to bring light to the darkest
+                            corners of the world.
+                        </p>
+
+                        <a href="{% url 'pw_wowProj:human'%}" type="button" class="button">More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--End Factions-->
+{% endblock %}

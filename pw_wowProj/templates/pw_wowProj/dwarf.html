@@ -1,0 +1,91 @@
+{% extends 'pw_wowProj/base_azul_races.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="titulo" id="azul">
+        <h1>Dwarf</h1>
+        <span>Alliance</span>
+    </div>
+
+    <p class="introducao col-wide">
+        The bold and courageous dwarves are an ancient race descended from the earthen—beings of living stone created by
+        the titans when the world was young. Due to a strange malady known as the Curse of Flesh, the dwarves’ earthen
+        progenitors underwent a transformation
+        that turned their rocky hides into soft skin. Ultimately, these creatures of flesh and blood dubbed themselves
+        dwarves and carved out the mighty city of Ironforge in the snowy peaks of Khaz Modan.
+    </p>
+
+    <figure>
+        <img class="imagem-1" src=".{% static 'pw_wowProj/images/DwarfGif25.gif' %}" alt="Animated Gif"/>
+        <figcaption>Dwarf 3D Model</figcaption>
+    </figure>
+
+    <figure>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/dwarfCity.jpg' %}" alt="Main City "/>
+        <figcaption>Ironforge</figcaption>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/dwarfCity2.jpg' %}" alt="Main City "/>
+        <figcaption>Ironforge</figcaption>
+    </figure>
+
+
+
+    <p>
+        Encircled by jagged mountain peaks, the snowy region of Dun Morogh has been the cultural heart of Ironforge’s
+        dwarves for ages. Not long ago, quakes roused numerous troggs from their subterranean dwellings and drove the
+        bestial creatures toward the dwarven
+        settlement of Anvilmar in Coldridge Valley. The sudden influx of troggs also caused the savage Frostmane trolls
+        to abandon their usual holdings on Shimmer Ridge and encroach upon dwarf-occupied areas. Threatened on two
+        fronts, Dun Morogh’s
+        mountaineers are spread thin. Without additional assistance, the prized lands of Dun Morogh might soon fall to
+        the dwarves’ barbarous foes.
+    </p>
+    <p>
+        Carved into the stone heart of Khaz Modan, the mighty city of Ironforge is a testament to the dwarves’ strength
+        and resilience. During the Second War between orcs and humans, many dwarven strongholds fell to the onslaught of
+        the Horde, yet Ironforge was
+        never breached. Now ruled over by the Council of Three Hammers, the city has entered into a tense and
+        potentially violent era. Yet should the council rule with equality and justice, this new period in Ironforge’s
+        history might very well
+        be its greatest.
+    </p>
+
+
+    <ul class="atributos " id="blueLine">
+        <li>Surgiu: 12.000 anos</li>
+        <li>Tipo: Mamífero</li>
+        <li>Idade Média: 13 anos</li>
+        <li>Macho adulto: 80kg</li>
+        <li>Fêmea adulta: 55kg</li>
+        <li>Família: Lupus</li>
+    </ul>
+
+
+    <div class="informacoes ">
+        <p>
+            Distinguished by their shaggy coats and massive horns, Barak Tor’ol mountain rams are simple yet proud
+            animals whose fearlessness is matched only by that of their dwarven masters. What these good-natured animals
+            lack in ferocity, they compensate with
+            uncommon durability and strength. Recently, other types of rams have been discovered in the frigid continent
+            of Northrend, yet the amicable species native to Dun Morogh and its surrounding regions is still preferred
+            by Ironforge’s
+            dwarves.
+        </p>
+
+    </div>
+
+    <img class="imagem-3 col-wide " src="{% static 'pw_wowProj/images/dwarfMount.jpg' %}" alt="WIDE IMG "/>
+{% endblock %}
+
+{% block anuncios %}
+
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/enYdAxVcNZA" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tUXdcrSbIho" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+{% endblock %}

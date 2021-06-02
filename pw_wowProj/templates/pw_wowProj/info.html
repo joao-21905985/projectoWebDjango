@@ -1,0 +1,1115 @@
+{% extends 'pw_wowProj/base.html' %}
+{% load static %}
+{% block main %}
+    <main id="about">
+        <div class="about container">
+            <h1 class="section_title"></h1>
+            <div class="borderBox">
+                <center>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Elementos</th>
+                            <th>Usado</th>
+                            <th>Descrição</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Main</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>USED</td>
+                        </tr>
+
+                        <tr>
+                            <td>Section</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nav</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Header</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Article</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Used</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aside</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Used</td>
+                        </tr>
+
+                        <tr>
+                            <td>Footer</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+            <h1 class="section_title"><span>T</span>abelas <br> <small><small><small><span>E</span>lementos
+                <span>HTML5</span></small></small>
+            </small>
+            </h1>
+        </div>
+
+        <div class="about container">
+            <h1 class="section_title"><span>T</span>abelas <br> <small><small><small><span>S</span>electores de <span>CSS</span></small></small>
+            </small>
+            </h1>
+            <div class="borderBox">
+                <center>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Elementos</th>
+                            <th>Usado</th>
+                            <th>Descrição</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Universal</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>O seletor universal (*) aplica o estilo a todos os elementos da página.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tipo</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>O seletor de tipo usa o nome do marcador a estilizar.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Classe</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>O seletor de classe associa um nome a um estilo.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Id</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>O atributo id permite identificar univocamente um elemento do HTML</td>
+                        </tr>
+
+                        <tr>
+                            <td>Atributo</td>
+                            <td><i class="material-icons">thumb_up</i></td>
+                            <td>Seletores que se aplicam a atributos de elementos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pseudo-Class</td>
+                            <td><i class="material-icons">thumb_down</i></td>
+                            <td>Seletor associado ao estado de um elemento.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pseudo-Elemento</td>
+                            <td><i class="material-icons">thumb_down</i></td>
+                            <td>Seletor associado em partes de um elemento.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <div class="about container">
+            <h1 class="section_title"></h1>
+            <div class="borderBox">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Elementos</th>
+                        <th>Usado</th>
+                        <th>Descrição</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>Descendentes | ex: el el2</td>
+                        <td><i class="material-icons">thumb_up</i></td>
+                        <td>Todos os "el2" que estão "dentro" de um el e foram usados nas paginas principais</td>
+                    </tr>
+
+                    <tr>
+                        <td>Filhos | ex: el > el2</td>
+                        <td><i class="material-icons">thumb_down</i></td>
+                        <td>Todos os "el2" que estão "logo dentro" de um el e foram usados nas paginas principais</td>
+                    </tr>
+
+                    <tr>
+                        <td>Adjacentes | ex: el ~ el2</td>
+                        <td><i class="material-icons">thumb_down</i></td>
+                        <td>Todos os "el2" que estão colocados depois de um "el" e foram usados nas paginas
+                            principais.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Imediatamente adjacentes | ex: el + el2</td>
+                        <td><i class="material-icons">thumb_down</i></td>
+                        <td>Todos os "el2" que estão colocados imediatamente depois de um "el" e foram usados nas
+                            paginas principais
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Agrupados | ex: el,el2</td>
+                        <td><i class="material-icons">thumb_up</i></td>
+                        <td>Os el e el2 ficaram com o mesmo estilo e foram usados nas paginas principais</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <h1 class="section_title"><span>T</span>abelas <br> <small><small><small><span>C</span>ombinadores de <span>CSS</span></small></small>
+            </small>
+            </h1>
+        </div>
+
+        <div class="about container">
+
+            <div class="borderRight">
+                <video controls>
+                    <source src="{% static 'pw_wowProj/images/ItMatters.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h1 class="section_title"><span>It</span>Matters </h1>
+        </div>
+
+        <div class="about container">
+            <div class="borderRight">
+                    <img src="{% static 'pw_wowProj/images/Layout PC.png' %}" alt="kekw">
+                    <img src="{% static 'pw_wowProj/images/Layout Mobile.png' %}" alt="kekw">
+            </div>
+            <h1 class="section_title"><span>Lay</span>out </h1>
+        </div>
+    </main>
+
+    <!--End About-->
+
+    <!--Start Factions-->
+
+    <article id="about">
+        <div class="about container">
+            <h1 class="section_title">F<span>l</span>ow</h1>
+            <div class="borderTest">
+                <img src="{% static 'pw_wowProj/images/Flow.png' %}" alt="">
+            </div>
+        </div>
+
+
+        <div class="about container">
+            <div>
+                <svg width="960" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g></g>
+
+                    <g transform="translate(480,300)scale(1.0489510297775269,1.0489510297775269)">
+                        <text text-anchor="middle" transform="translate(195,41)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">hack
+                        </text>
+                        <text text-anchor="middle" transform="translate(-51,52)rotate(59.99999999999999)"
+                              style="font-size: 74px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">world
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(243,134)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 50px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">war
+                        </text>
+                        <text text-anchor="middle" transform="translate(-49,-92)rotate(-59.99999999999999)"
+                              style="font-size: 30px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">multiplayer
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-141,140)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">cataclysm
+                        </text>
+                        <text text-anchor="middle" transform="translate(-240,-47)rotate(20)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">lich
+                        </text>
+                        <text text-anchor="middle" transform="translate(-179,146)rotate(60)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">starcraft
+                        </text>
+                        <text text-anchor="middle" transform="translate(66,118)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">diablo
+                        </text>
+                        <text text-anchor="middle" transform="translate(-265,-114)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">hearthstone
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-228,-146)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">blizzcon
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-36,-40)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">warfare
+                        </text>
+                        <text text-anchor="middle" transform="translate(-46,85)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">orc
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(110,-61)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">elf
+                        </text>
+                        <text text-anchor="middle" transform="translate(-233,-27)rotate(-60)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">novel
+                        </text>
+                        <text text-anchor="middle" transform="translate(-104,-149)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">remaster
+                        </text>
+                        <text text-anchor="middle" transform="translate(37,-5)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">dwarf
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(108,70)rotate(59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">gnome
+                        </text>
+                        <text text-anchor="middle" transform="translate(-4,11)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">troll
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-201,134)rotate(59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">magazine
+                        </text>
+                        <text text-anchor="middle" transform="translate(218,51)rotate(20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">mmorpg
+                        </text>
+                        <text text-anchor="middle" transform="translate(-161,70)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">guild
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(170,88)rotate(59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">mage
+                        </text>
+                        <text text-anchor="middle" transform="translate(-140,-154)rotate(20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">dungeon
+                        </text>
+                        <text text-anchor="middle" transform="translate(-169,55)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">dota
+                        </text>
+                        <text text-anchor="middle" transform="translate(-15,-69)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">ragnarok
+                        </text>
+                        <text text-anchor="middle" transform="translate(208,13)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">battlefield
+                        </text>
+                        <text text-anchor="middle" transform="translate(201,26)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">warlock
+                        </text>
+                        <text text-anchor="middle" transform="translate(73,79)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">gameplay
+                        </text>
+                        <text text-anchor="middle" transform="translate(-264,-32)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">roleplay
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(248,6)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">paladin
+                        </text>
+                        <text text-anchor="middle" transform="translate(34,-78)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">battleground
+                        </text>
+                        <text text-anchor="middle" transform="translate(267,99)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">rpg
+                        </text>
+                        <text text-anchor="middle" transform="translate(-167,-152)rotate(20.000000000000007)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">rune
+                        </text>
+                        <text text-anchor="middle" transform="translate(-246,153)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">necromancer
+                        </text>
+                        <text text-anchor="middle" transform="translate(-171,32)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">elven
+                        </text>
+                        <text text-anchor="middle" transform="translate(26,10)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">gamers
+                        </text>
+                        <text text-anchor="middle" transform="translate(216,-110)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">mod
+                        </text>
+                        <text text-anchor="middle" transform="translate(103,-102)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">faction
+                        </text>
+                        <text text-anchor="middle" transform="translate(4,-117)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">horde
+                        </text>
+                        <text text-anchor="middle" transform="translate(-206,32)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">dragon
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(78,94)rotate(40.00000000000001)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">lore
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(25,-114)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">undead
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(26,-25)rotate(-59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">homeworld
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-133,165)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">blacksmithing
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(86,56)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">larp
+                        </text>
+                        <text text-anchor="middle" transform="translate(237,71)rotate(-20.000000000000007)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">videogame
+                        </text>
+                        <text text-anchor="middle" transform="translate(-122,-165)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">warrior
+                        </text>
+                        <text text-anchor="middle" transform="translate(63,-73)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">terran
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(151,-95)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">shaman
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-240,-93)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">goblin
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-246,124)rotate(-40.00000000000001)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">zelda
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(258,141)rotate(-40.00000000000001)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">jedi
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-198,49)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">armor
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(247,-96)rotate(59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">machinima
+                        </text>
+                        <text text-anchor="middle" transform="translate(56,36)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">quest
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-118,-33)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">bot
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(249,-52)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">realm
+                        </text>
+                        <text text-anchor="middle" transform="translate(7,-58)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">drow
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-18,-115)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">rpgs
+                        </text>
+                        <text text-anchor="middle" transform="translate(273,-36)rotate(-20.000000000000007)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">summoner
+                        </text>
+                        <text text-anchor="middle" transform="translate(246,25)rotate(60)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">warlord
+                        </text>
+                        <text text-anchor="middle" transform="translate(-221,61)rotate(-20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">combat
+                        </text>
+                        <text text-anchor="middle" transform="translate(252,-120)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">druid
+                        </text>
+                        <text text-anchor="middle" transform="translate(-115,-68)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">sith
+                        </text>
+                        <text text-anchor="middle" transform="translate(-146,23)rotate(-20.000000000000007)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">epic
+                        </text>
+                        <text text-anchor="middle" transform="translate(275,86)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">empire
+                        </text>
+                        <text text-anchor="middle" transform="translate(10,-96)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">craft
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-270,-12)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">zombie
+                        </text>
+                        <text text-anchor="middle" transform="translate(-136,-87)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">npc
+                        </text>
+                        <text text-anchor="middle" transform="translate(-251,8)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">battlefront
+                        </text>
+                        <text text-anchor="middle" transform="translate(5,181)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">rogue
+                        </text>
+                        <a href="https://pt.wowhead.com/">
+                            <text text-anchor="middle" transform="translate(165,12)rotate(-20)skewX(0)scale(1,1)"
+                                  style="font-size: 100px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                                  data-darkreader-inline-fill="">wow
+                            </text>
+                        </a>
+                        <text text-anchor="middle" transform="translate(-210,166)rotate(-59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">warfarer
+                        </text>
+                        <text text-anchor="middle" transform="translate(274,63)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">crare
+                        </text>
+                        <text text-anchor="middle" transform="translate(-247,-133)rotate(0)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">sitzkrieg
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(280,37)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">spadassin
+                        </text>
+                        <text text-anchor="middle" transform="translate(6,-135)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">witcher
+                        </text>
+                        <text text-anchor="middle" transform="translate(189,69)rotate(0)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">warlockry
+                        </text>
+                        <text text-anchor="middle" transform="translate(137,171)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">cataclysmist
+                        </text>
+                        <text text-anchor="middle" transform="translate(-264,114)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">runology
+                        </text>
+                        <text text-anchor="middle" transform="translate(68,172)rotate(-60)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">ouphe
+                        </text>
+                        <text text-anchor="middle" transform="translate(135,183)rotate(20.000000000000007)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">craftsmaster
+                        </text>
+                        <text text-anchor="middle" transform="translate(-279,148)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">langrage
+                        </text>
+                        <text text-anchor="middle" transform="translate(275,136)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">angakok
+                        </text>
+                        <text text-anchor="middle" transform="translate(119,-155)rotate(20)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">rigsdaler
+                        </text>
+                        <text text-anchor="middle" transform="translate(-273,-86)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">boardgame
+                        </text>
+                        <text text-anchor="middle" transform="translate(-249,50)rotate(0)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">earthdrake
+                        </text>
+                        <text text-anchor="middle" transform="translate(-227,26)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">swording
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-282,-55)rotate(-59.99999999999999)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">battailant
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(-274,8)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">hoplology
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(38,179)rotate(40.00000000000001)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">pickeer
+                        </text>
+                        <text text-anchor="middle" transform="translate(42,20)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">factionary
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(147,127)rotate(-40)skewX(-3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">roguelike
+                        </text>
+                        <text text-anchor="middle" transform="translate(252,161)rotate(0)skewX(0)scale(1,1)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">debellate
+                        </text>
+                        <a href="https://www.mmo-champion.com/content/?">
+                            <text text-anchor="middle" transform="translate(27,-146)rotate(59.99999999999999)"
+                                  style="font-size: 60px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                                  data-darkreader-inline-fill="">MMO
+                            </text>
+                        </a>
+                        <text text-anchor="middle" transform="translate(292,-10)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">gladiatorian
+                        </text>
+                        <text text-anchor="middle" transform="translate(-225,5)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">cod
+                        </text>
+                        <text text-anchor="middle" transform="translate(44,166)rotate(59.99999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">star
+                        </text>
+                        <text text-anchor="middle"
+                              transform="translate(185,-133)rotate(40)skewX(3.1805546814635176e-15)scale(0.9999999999999999,0.9999999999999999)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">yggdrasil
+                        </text>
+                        <text text-anchor="middle" transform="translate(-267,145)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">aoe
+                        </text>
+                        <a href="https://worldofwarcraft.com/pt-br/">
+                            <text text-anchor="middle" transform="translate(-151,52)rotate(60)"
+                                  style="font-size: 100px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                                  data-darkreader-inline-fill="">warcraft
+                            </text>
+                        </a>
+                        <text text-anchor="middle" transform="translate(58,154)rotate(0)"
+                              style="font-size: 50px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">game
+                        </text>
+                        <text text-anchor="middle" transform="translate(115,121)rotate(20)"
+                              style="font-size: 37px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">iii
+                        </text>
+                        <text text-anchor="middle" transform="translate(48,-20)rotate(0)"
+                              style="font-size: 30px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">ii
+                        </text>
+                        <text text-anchor="middle" transform="translate(114,-80)rotate(-40)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">entertainment
+                        </text>
+                        <text text-anchor="middle" transform="translate(182,-97)rotate(60)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">online
+                        </text>
+                        <text text-anchor="middle" transform="translate(161,-75)rotate(-40)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">battle
+                        </text>
+                        <text text-anchor="middle" transform="translate(-217,93)rotate(20)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">computer
+                        </text>
+                        <text text-anchor="middle" transform="translate(63,-83)rotate(0)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">card
+                        </text>
+                        <text text-anchor="middle" transform="translate(170,136)rotate(-60)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">fantasy
+                        </text>
+                        <text text-anchor="middle" transform="translate(20,47)rotate(39.999999999999986)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">knight
+                        </text>
+                        <text text-anchor="middle" transform="translate(149,43)rotate(-20)"
+                              style="font-size: 21px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">heroes
+                        </text>
+                        <text text-anchor="middle" transform="translate(164,-127)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">3
+                        </text>
+                        <text text-anchor="middle" transform="translate(208,99)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">2008
+                        </text>
+                        <text text-anchor="middle" transform="translate(-79,-108)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">blizzard
+                        </text>
+                        <text text-anchor="middle" transform="translate(69,47)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">reign
+                        </text>
+                        <text text-anchor="middle" transform="translate(-144,103)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">chaos
+                        </text>
+                        <text text-anchor="middle" transform="translate(50,76)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">tides
+                        </text>
+                        <text text-anchor="middle" transform="translate(185,136)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">darkness
+                        </text>
+                        <text text-anchor="middle" transform="translate(-98,-57)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">beyond
+                        </text>
+                        <text text-anchor="middle" transform="translate(-5,-48)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">dark
+                        </text>
+                        <text text-anchor="middle" transform="translate(197,84)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">portal
+                        </text>
+                        <text text-anchor="middle" transform="translate(233,45)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">frozen
+                        </text>
+                        <text text-anchor="middle" transform="translate(-85,-139)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">throne
+                        </text>
+                        <text text-anchor="middle" transform="translate(116,-125)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">realtime
+                        </text>
+                        <text text-anchor="middle" transform="translate(-95,-117)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">strategy
+                        </text>
+                        <text text-anchor="middle" transform="translate(-166,82)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">massively
+                        </text>
+                        <text text-anchor="middle" transform="translate(-28,-88)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">roleplaying
+                        </text>
+                        <text text-anchor="middle" transform="translate(-107,-80)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">burning
+                        </text>
+                        <text text-anchor="middle" transform="translate(148,82)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">crusade
+                        </text>
+                        <text text-anchor="middle" transform="translate(-4,-86)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">wrath
+                        </text>
+                        <text text-anchor="middle" transform="translate(-126,113)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">king
+                        </text>
+                        <text text-anchor="middle" transform="translate(123,-55)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">mists
+                        </text>
+                        <text text-anchor="middle" transform="translate(-218,-27)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">pandaria
+                        </text>
+                        <text text-anchor="middle" transform="translate(227,-142)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">warlords
+                        </text>
+                        <text text-anchor="middle" transform="translate(109,-141)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">draenor
+                        </text>
+                        <text text-anchor="middle" transform="translate(-62,-154)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">legion
+                        </text>
+                        <text text-anchor="middle" transform="translate(23,-67)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">azeroth
+                        </text>
+                        <text text-anchor="middle" transform="translate(165,52)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">media
+                        </text>
+                        <text text-anchor="middle" transform="translate(-178,-134)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">franchise
+                        </text>
+                        <text text-anchor="middle" transform="translate(-14,-5)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">video
+                        </text>
+                        <text text-anchor="middle" transform="translate(-104,-19)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">orcs
+                        </text>
+                        <text text-anchor="middle" transform="translate(-233,-1)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill=""></text>
+                        <text text-anchor="middle" transform="translate(-204,4)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">humans
+                        </text>
+                        <text text-anchor="middle" transform="translate(93,169)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">digital
+                        </text>
+                        <text text-anchor="middle" transform="translate(158,-147)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">distribution
+                        </text>
+                        <text text-anchor="middle" transform="translate(-238,104)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">collectible
+                        </text>
+                        <text text-anchor="middle" transform="translate(-145,-138)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">wings
+                        </text>
+                        <text text-anchor="middle" transform="translate(-219,144)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">liberty
+                        </text>
+                        <text text-anchor="middle" transform="translate(-133,-103)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">battlenet
+                        </text>
+                        <text text-anchor="middle" transform="translate(-131,-65)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">reforged
+                        </text>
+                        <text text-anchor="middle" transform="translate(225,-97)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">high
+                        </text>
+                        <text text-anchor="middle" transform="translate(12,-25)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">setting
+                        </text>
+                        <text text-anchor="middle" transform="translate(267,-12)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">booster
+                        </text>
+                        <text text-anchor="middle" transform="translate(-208,-158)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">pack
+                        </text>
+                        <text text-anchor="middle" transform="translate(-91,12)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">personal
+                        </text>
+                        <text text-anchor="middle" transform="translate(73,-31)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">mac
+                        </text>
+                        <text text-anchor="middle" transform="translate(90,-45)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">os
+                        </text>
+                        <text text-anchor="middle" transform="translate(123,68)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">allen
+                        </text>
+                        <text text-anchor="middle" transform="translate(-10,-155)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">adham
+                        </text>
+                        <text text-anchor="middle" transform="translate(184,163)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">special
+                        </text>
+                        <text text-anchor="middle" transform="translate(276,17)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">edition
+                        </text>
+                        <text text-anchor="middle" transform="translate(-209,-18)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">cd
+                        </text>
+                        <text text-anchor="middle" transform="translate(-107,-95)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">key
+                        </text>
+                        <text text-anchor="middle" transform="translate(294,-54)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">adventure
+                        </text>
+                        <text text-anchor="middle" transform="translate(294,120)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">adventures
+                        </text>
+                        <text text-anchor="middle" transform="translate(190,-148)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">lord
+                        </text>
+                        <text text-anchor="middle" transform="translate(-70,44)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">clans
+                        </text>
+                        <text text-anchor="middle" transform="translate(-159,-101)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">frank
+                        </text>
+                        <text text-anchor="middle" transform="translate(-187,174)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">pearce
+                        </text>
+                        <text text-anchor="middle" transform="translate(-265,-143)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">tabula
+                        </text>
+                        <text text-anchor="middle" transform="translate(157,107)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">rasa
+                        </text>
+                        <text text-anchor="middle" transform="translate(167,-62)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">great
+                        </text>
+                        <text text-anchor="middle" transform="translate(137,63)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">lych
+                        </text>
+                        <text text-anchor="middle" transform="translate(-203,75)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">gate
+                        </text>
+                        <text text-anchor="middle" transform="translate(-33,112)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">hot
+                        </text>
+                        <text text-anchor="middle" transform="translate(100,-172)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">mythical
+                        </text>
+                        <text text-anchor="middle" transform="translate(-258,65)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">monster
+                        </text>
+                        <text text-anchor="middle" transform="translate(279,-104)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">banneret
+                        </text>
+                        <text text-anchor="middle" transform="translate(-1,-169)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">chess
+                        </text>
+                        <text text-anchor="middle" transform="translate(-197,-167)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">piece
+                        </text>
+                        <text text-anchor="middle" transform="translate(106,186)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">first
+                        </text>
+                        <text text-anchor="middle" transform="translate(204,-164)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">trench
+                        </text>
+                        <text text-anchor="middle" transform="translate(61,99)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">bride
+                        </text>
+                        <text text-anchor="middle" transform="translate(-159,-169)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">soldier
+                        </text>
+                        <text text-anchor="middle" transform="translate(296,42)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">fortune
+                        </text>
+                        <text text-anchor="middle" transform="translate(236,-131)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">martel
+                        </text>
+                        <text text-anchor="middle" transform="translate(-96,95)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">de
+                        </text>
+                        <text text-anchor="middle" transform="translate(215,-88)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">fer
+                        </text>
+                        <text text-anchor="middle" transform="translate(-71,-169)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">bachelor
+                        </text>
+                        <text text-anchor="middle" transform="translate(-273,104)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">trading
+                        </text>
+                        <text text-anchor="middle" transform="translate(297,74)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82); --darkreader-inline-fill:#e8bd59;"
+                              data-darkreader-inline-fill="">legendary
+                        </text>
+                        <text text-anchor="middle" transform="translate(-273,38)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148); --darkreader-inline-fill:#e5c68a;"
+                              data-darkreader-inline-fill="">pictures
+                        </text>
+                        <text text-anchor="middle" transform="translate(-284,-154)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57); --darkreader-inline-fill:#c8827f;"
+                              data-darkreader-inline-fill="">duncan
+                        </text>
+                        <text text-anchor="middle" transform="translate(209,166)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74); --darkreader-inline-fill:#bd6263;"
+                              data-darkreader-inline-fill="">jones
+                        </text>
+                        <text text-anchor="middle" transform="translate(-142,185)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107); --darkreader-inline-fill:#d86871;"
+                              data-darkreader-inline-fill="">charles
+                        </text>
+                        <text text-anchor="middle" transform="translate(-33,-170)rotate(-40)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156); --darkreader-inline-fill:#e58c93;"
+                              data-darkreader-inline-fill="">leavitt
+                        </text>
+                        <text text-anchor="middle" transform="translate(-237,7)rotate(60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115); --darkreader-inline-fill:#c088b8;"
+                              data-darkreader-inline-fill="">last
+                        </text>
+                        <text text-anchor="middle" transform="translate(225,183)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148); --darkreader-inline-fill:#b669a6;"
+                              data-darkreader-inline-fill="">guardian
+                        </text>
+                        <text text-anchor="middle" transform="translate(-151,93)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189); --darkreader-inline-fill:#d073c0;"
+                              data-darkreader-inline-fill="">warner
+                        </text>
+                        <text text-anchor="middle" transform="translate(-274,-164)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214); --darkreader-inline-fill:#db95d2;"
+                              data-darkreader-inline-fill="">bros
+                        </text>
+                        <text text-anchor="middle" transform="translate(133,151)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121); --darkreader-inline-fill:#94a9cc;"
+                              data-darkreader-inline-fill="">san
+                        </text>
+                        <text text-anchor="middle" transform="translate(82,187)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163); --darkreader-inline-fill:#7b94bd;"
+                              data-darkreader-inline-fill="">diego
+                        </text>
+                        <text text-anchor="middle" transform="translate(290,-91)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207); --darkreader-inline-fill:#7195d1;"
+                              data-darkreader-inline-fill="">comiccon
+                        </text>
+                        <text text-anchor="middle" transform="translate(292,-137)rotate(-20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222); --darkreader-inline-fill:#93aedb;"
+                              data-darkreader-inline-fill="">international
+                        </text>
+                        <text text-anchor="middle" transform="translate(-293,-79)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57); --darkreader-inline-fill:#b1c788;"
+                              data-darkreader-inline-fill="">storm
+                        </text>
+                        <text text-anchor="middle" transform="translate(-282,82)rotate(39.999999999999986)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82); --darkreader-inline-fill:#a0b46c;"
+                              data-darkreader-inline-fill="">arena
+                        </text>
+                        <text text-anchor="middle" transform="translate(285,-70)rotate(0)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107); --darkreader-inline-fill:#b8d171;"
+                              data-darkreader-inline-fill="">parallel
+                        </text>
+                        <text text-anchor="middle" transform="translate(264,-153)rotate(20)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156); --darkreader-inline-fill:#cad894;"
+                              data-darkreader-inline-fill="">universe
+                        </text>
+                        <text text-anchor="middle" transform="translate(-56,-133)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49); --darkreader-inline-fill:#cfb177;"
+                              data-darkreader-inline-fill="">next
+                        </text>
+                        <text text-anchor="middle" transform="translate(161,-177)rotate(-60)"
+                              style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57); --darkreader-inline-fill:#cbaf54;"
+                              data-darkreader-inline-fill="">generation
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+    </article>
+
+{% endblock %}

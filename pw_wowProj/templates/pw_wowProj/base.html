@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="authors" content=" JEFF FROM THE OVERWATCH TEAM">
+    <meta name="keywords" content="wow, mmo, mazing, humongus world, worldofwarcraft, best, game">
+    <meta name="description"
+          content="Website acerca de um dos melhores mmo alguma vez criados, e também um dos mais antigos. Website criado no decorrer de uma unidade curricular">
+    <meta name="disclaimer" content="toda a informação disponibilizada no website foi obtida em fontes oficias do jogo">
+
+    <title>WOW PROJECT</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'pw_wowProj/css/styles.css' %}"/>
+
+    <title>WoW Project</title>
+    <link rel="shortcut icon" type="img/x-icon" href="{% static 'pw_wowProj/images/icon.png' %}"/>
+</head>
+
+<body class="mainPage">
+<!--Header Section-->
+<header class="hordeheader">
+
+    <a href="{% url 'pw_wowProj:index' %}" class="logo"><img src="{% static 'pw_wowProj/images/wow.png' %}" alt="WOW Project">
+        <h1> W<span>P</span></h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="{% url 'pw_wowProj:index' %}" texto="Home">Home</a></li>
+            <li><a href="{% url 'pw_wowProj:human' %}" texto="Races">Races</a></li>
+            <li><a href="{% url 'pw_wowProj:quizz' %}" texto="Quizz">Quizz</a></li>
+            <li><a href="{% url 'pw_wowProj:info' %}" texto="Info">Info</a></li>
+        </ul>
+    </nav>
+</header>
+<!--End Header-->
+
+<main>
+    {% block main %}
+
+    {% endblock main %}
+</main>
+
+
+<!--Start Footer-->
+<footer id="footer">
+    <div class="footerred container" id="red">
+        <div>
+            <h1 class="section_title"><span>P</span>rogramação <span>W</span>eb</h1>
+        </div>
+        <h2>Ano lectivo <span>20</span>/<span>21</span></h2>
+        <div class="footicon">
+            <div class="footitem">
+                <a href="https://www.ulusofona.pt/" target="_blank"><img
+                        src="{% static 'pw_wowProj/images/ulusofona.jpg' %}"></a>
+
+            </div>
+            <div class="footitem">
+                <a href="https://worldofwarcraft.com/en-gb/character/eu/stormscale/yv%C3%AF" target="_blank"><img
+                        src="{% static 'pw_wowProj/images/accounts.png' %}"></a>
+
+            </div>
+            <div class="footitem">
+                <a href="https://worldofwarcraft.com/en-gb/character/eu/aggra-portugu%C3%AAs/barlow"
+                   target="_blank"><img src="{% static 'pw_wowProj/images/accounts.png' %}"></a>
+
+            </div>
+
+        </div>
+        <p>-- Trabalho realizado no ambito escolar com objectivo educacional --</p>
+    </div>
+
+</footer>
+<!--End Footer-->
+</body>
+</html>

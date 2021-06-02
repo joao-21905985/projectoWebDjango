@@ -1,0 +1,93 @@
+{% extends 'pw_wowProj/base_red_races.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="titulo" id="red">
+        <h1>Orc</h1>
+        <span>Horde</span>
+    </div>
+
+    <p class="introducao col-wide">
+        Unlike the other races of the Horde, orcs are not native to Azeroth. Initially, they lived as shamanic clans on
+        the lush world of Draenor. They abandoned their peaceful culture when Kil’jaeden, a demon lord of the Burning
+        Legion, corrupted the orcs and
+        used them in his vengeful plot against the draenei, who were exiles from Kil’jaeden’s homeworld.
+    </p>
+
+    <figure>
+        <img class="imagem-1" src="{% static 'pw_wowProj/images/OrcGif25.gif' %}" alt="Animated Gif"/>
+        <figcaption>Orc 3D Model</figcaption>
+    </figure>
+
+    <figure>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/OrcCity.jpg' %}" alt="Main City "/>
+        <figcaption>Ogrimmar</figcaption>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/OrcCity2.jpg' %}" alt="Main City "/>
+        <figcaption>Ogrimmar</figcaption>
+    </figure>
+
+
+
+    <p>
+        The dry, harsh land of Durotar is home to some of the toughest creatures on Azeroth. Unwary travelers may fall
+        prey to venomous scorpids, ferocious crocolisks, or angry quilboar. Thrall chose to settle this inhospitable
+        area after the Third War as penance
+        for the orcs’ past transgressions. He named the land after his father, Durotan, former chieftain of the
+        Frostwolf clan. Following the Cataclysm, many of the orcish settlements were flooded or destroyed, and the
+        Northwatch soldiers at Tiragarde
+        Keep have become more aggressive than ever. As relations worsen between the Alliance and the Horde, it is
+        essential that the orcs contain these threats swiftly to ensure the survival of their people.
+    </p>
+    <p>
+        Named for the former Horde warchief Orgrim Doomhammer, this capital was rapidly constructed when the orcs first
+        settled in Durotar. Garrosh Hellscream has recently rebuilt most of the city’s architecture, and now Orgrimmar’s
+        fortresses rank among the
+        most imposing on Azeroth. Spiked metal towers line the city’s streets, and the red-and-black banners of the
+        Horde wave from every post. Most of the various races have separated into their own districts, from the tauren
+        in the Valley of
+        Wisdom to the trolls in the Valley of Spirits. Grommash Hold towers over all else, allowing Garrosh Hellscream
+        to keep a close watch on his people.
+    </p>
+
+
+    <ul class="atributos" id="redLine">
+        <li>Orcs enrage increasing damage and decreasing heal taken</li>
+        <li>Orcs have resitance to stun effects</li>
+        <li>Orcs deal more damage with their pets</li>
+        <li>Orcs have increased skill with axes</li>
+
+    </ul>
+
+
+    <div class="informacoes">
+        <p>
+            Long ago, the orcs tamed the large and swift wolves of Draenor. These massive canines came to be the orcs’
+            chosen companions as well as their favored method of transportation. The wolves’ unflinching temperament
+            made them especially well-suited for battling
+            large prey. When the orcs became more warlike and invaded Azeroth, their wolves were bred for size and
+            stamina so they could bear armored riders into battle. Dire wolves remain the favored mounts for orc
+            fighters and can be purchased
+            in the Valley of Honor in Orgrimmar.
+        </p>
+
+    </div>
+
+    <img class="imagem-3 col-wide " src="{% static 'pw_wowProj/images/OrcMount.jpg' %}" alt="WIDE IMG "/>
+{% endblock %}
+
+{% block anuncios %}
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/enYdAxVcNZA"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tUXdcrSbIho"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+
+{% endblock %}

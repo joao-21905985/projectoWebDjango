@@ -1,0 +1,92 @@
+{% extends 'pw_wowProj/base_red_races.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="titulo" id="red">
+        <h1>Troll</h1>
+        <span>Horde</span>
+    </div>
+
+    <p class="introducao col-wide">
+        The savage trolls of Azeroth are infamous for their cruelty, dark mysticism, and seething hatred for all other
+        races. Yet one exception among the trolls is the Darkspear tribe. Plagued by a history of subservience and
+        exile, this proud tribe was on the
+        brink of extinction when Warchief Thrall and his mighty Horde forces were driven to the trolls’ remote island
+        home in the South Seas during a violent storm
+    </p>
+
+    <figure>
+        <img class="imagem-1" src="{% static 'pw_wowProj/images/TrollGif25.gif' %}" alt="Animated Gif"/>
+        <figcaption>Troll 3D Model</figcaption>
+    </figure>
+
+    <figure>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/TrollCity.jpg' %}" alt="Main City "/>
+        <figcaption>Darkspear Isle</figcaption>
+        <img class="imagem-2 " src="{% static 'pw_wowProj/images/TrollCity2.jpg' %} " alt="Main City "/>
+        <figcaption>Darkspear Isle</figcaption>
+    </figure>
+
+
+
+    <p>
+        The Echo Isles are a small cluster of tropical landmasses located near the arid coast of Durotar. In addition to
+        being the home of the Darkspear trolls, the archipelago teems with raptors, tigers, and other dangerous
+        predators. Yet the hostile wildlife
+        is the least of the tribe’s worries. Although the Darkspears have liberated the Echo Isles from Zalazane, a
+        mysterious sea witch has recently appeared and begun using her dark sorcery to destroy the trolls’ way of life.
+        Additionally, naga
+        have overtaken territory just north of Darkspear Isle, the seat of power for the tribe. Having been exiles
+        throughout their history, the Darkspears are prepared to make any sacrifice in order to protect their home. Even
+        now, a new generation
+        of fearless trolls is training on Darkspear Isle, ready to give its lives for the future of the tribe.
+    </p>
+    <p>
+        Ever since defeating the traitorous witch doctor Zalazane, the Darkspear tribe has worked tirelessly to fortify
+        their home on Darkspear Isle. Covered in a network of huts and bridges, this jungle island has become a symbol
+        of the tribe’s glory, albeit
+        at a time when the trolls’ destiny remains uncertain due to the shocking loss of their leader, Vol'jin.
+        Regardless, the Darkspear tribe has vowed to stand firm and face whatever challenges lie ahead.
+    </p>
+
+
+
+    <ul class="atributos" id="redLine">
+        <li>Trolls can go beserk, increasing attack and casting speed</li>
+        <li>Trolls have increased Regeneration</li>
+        <li>Trolls deal more damage against beasts</li>
+        <li>Trolls have increased Skill with bows and throwing weapons</li>
+
+    </ul>
+
+
+    <div class="informacoes ">
+        <p>
+            The ferocity of Kalimdor’s raptors has enthralled the Darkspear trolls ever since their arrival on the Echo
+            Isles years ago. The tribe considers a raptor to be the purest embodiment of the hunter’s essence, and as
+            such, a tamed reptilian is prized as
+            a mount. Skilled Darkspear riders have even been known to channel their raptors’ savagery to suit their
+            will. Possession of these predators is also one of the most auspicious signs of status among trolls; many
+            have died trying to subdue
+            these swift and deadly raptors, and to control one indicates great station.
+        </p>
+
+    </div>
+
+    <img class="imagem-3 col-wide " src="{% static 'pw_wowProj/images/TrollMount.jpg' %}" alt="WIDE IMG "/>
+
+{% endblock %}
+
+{% block anuncios %}
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/enYdAxVcNZA" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <div class="anuncios-item ">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tUXdcrSbIho" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+{% endblock %}
