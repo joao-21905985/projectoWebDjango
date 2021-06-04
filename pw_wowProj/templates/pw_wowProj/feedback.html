@@ -1,0 +1,54 @@
+{% extends 'pw_wowProj/base_quizz.html' %}
+{% load static %}
+
+{% block main %}
+
+    <section id="quizz">
+        <!--CONTRIBUIÇÕES-->
+        <form action="mailto:joaoferre195@gmail.com" method="post" name="Sugestões Quizz">
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <label>Gostou do quizz?
+                    <select name="avaliação" value="N/A">
+                        <option value="N/A">N/A</option>
+                        <option value="Muito">Muito</option>
+                        <option value="Mais ou menos">Mais ou menos</option>
+                        <option value="Péssimo">Péssimo</option>
+                    </select></label><br>
+
+                <fieldset>
+                    <label> Caso já tenha jogado wow, conte-nos qual a sua melhor experiência ingame.
+                        <br>
+                        <center>
+                            <textarea name="sugestões" rows="20" cols="50"
+                                      placeholder="Escreva aqui a sua história..."></textarea>
+                        </center>
+                    </label>
+                    <br>
+
+                    <label>
+                        Data de Visita:
+                        <input type="date" id="year" name="year" width="40px" max="2021-12-31"><br>
+                    </label>
+
+                    <label>
+                        Autor:
+                        <input type="text" name="nome"
+                               placeholder="O seu nome..."
+                               autocomplete="off" maxlength="20">
+                    </label>
+
+                    <center>
+                        <input type="submit" value="Submit" title="Submit Answers" alt="Submit">
+                    </center>
+
+
+                </fieldset>
+            </fieldset>
+        </form>
+
+
+    </section>
+
+{% endblock %}
