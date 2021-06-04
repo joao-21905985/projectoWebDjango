@@ -12,5 +12,6 @@ urlpatterns = [
     path('troll', views.troll_page_view, name='troll'),
     path('info', views.info_page_view, name='info'),
     path('quizz', views.quizz_page_view, name='quizz'),
-    path('soon', views.soon_page_view, name='soon')
+    path('soon', views.soon_page_view, name='soon'),
+    path('contactos', views.contactos_page_view, name='contactos')
 ]

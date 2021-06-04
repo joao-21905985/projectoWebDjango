@@ -48,3 +48,6 @@ def soon_page_view(request):
 
 def quizz_page_view(request):
     return render(request, 'pw_wowProj/quizz.html')
+
+def contactos_page_view(request):
+    return render(request, 'pw_wowProj/contactos.html')
