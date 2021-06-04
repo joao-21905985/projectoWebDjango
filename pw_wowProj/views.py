@@ -51,3 +51,6 @@ def quizz_page_view(request):
 
 def contactos_page_view(request):
     return render(request, 'pw_wowProj/contactos.html')
+
+def feedback_page_view(request):
+    return render(request, 'pw_wowProj/feedback.html')
