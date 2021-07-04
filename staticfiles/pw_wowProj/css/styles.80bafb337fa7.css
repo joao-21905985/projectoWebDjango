@@ -1,0 +1,1199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap&effect=3d');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Karantina&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: orangered;
+}
+
+li {
+    list-style: none;
+}
+
+.mainPage body {
+    background-color: black;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+body.blueback {
+    background-image: url("../images/blue_ally.f8b7c4cb122a.jpeg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+body.redback {
+    background-image: url("../images/background3.5ad3afca8047.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*----------------------------------------------------------------MAIN PAGE----------------------------------------------------------------*/
+
+
+/* Intro Section*/
+
+.intro-container {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#soon{ /*Background do soon*/
+    background-image: url("../images/intro.22c2b86025af.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
+#intro {
+    background-image: url("../images/intro.22c2b86025af.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#intro::after {
+    /*OVERLAY*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    /*Meter no fundo*/
+}
+
+#intro h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: orangered;
+    animation: intro_reveal 1s ease;
+    animation-delay: 1s;
+}
+
+#intro h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+#intro h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+#intro h1 {
+    display: block;
+    text-align: center;
+    width: auto;
+    font-size: 55px;
+    position: relative;
+    color: transparent;
+    animation: intro_text 0.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#intro h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+
+#intro h1:nth-child(2) {
+    text-align: center;
+    animation: intro_text_Red 0.5 ease forwards;
+    animation-delay: 2.5s;
+}
+
+.buttonIntro {
+    display: inline-block;
+    position: relative;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid orangered;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.buttonIntro:hover {
+    color: white;
+    background-color: orangered;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* ----------------------------------------------------------------End of Intro Section----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------Start of About Section----------------------------------------------------------------*/
+
+#about {
+    background-color: black;
+}
+
+#about .section_title {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-size: 4rem;
+    /*font-weight: 300px;*/
+    color: ivory;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+#about .section_title span {
+    color: orangered;
+}
+
+#about .borderTest {
+    margin-right: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    border-left: solid;
+    border-color: orangered;
+    padding: 10px 10px 10px 5px;
+    color: ivory;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    /*font-weight: 300px;*/
+    letter-spacing: 0.05rem;
+}
+
+#about p::first-letter {
+    color: grey;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+
+/* ----------------------------------------------------------------End of About Section----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------Start of Factions Section----------------------------------------------------------------*/
+
+#factions {
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+#factions .factions {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#factions .section_title {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 4rem;
+    /*font-weight: 300px;*/
+    color: ivory;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+#factions .section_title span {
+    color: orangered;
+}
+
+#factions .factions_top p {
+    margin: 25px 50px 75px;
+    /*top margin is 25px - right and left margins are 50px - bottom margin is 75px*/
+    text-indent: 20px;
+    padding-bottom: 20px;
+    color: ivory;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    /*font-weight: 300px;*/
+    letter-spacing: 0.05rem;
+}
+
+
+/*FACTION CARDS*/
+
+#factions .factions_bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#factions .faction_card_alliance {
+    flex-basis: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(24, 16, 158, 1) 0%, rgba(59, 59, 231, 1) 12%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+    transition: transform .2s;
+}
+
+#factions .faction_card_horde {
+    margin-bottom: 10px;
+    flex-basis: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(131, 14, 14, 1) 0%, rgba(182, 54, 54, 1) 12%, rgba(255, 0, 0, 1) 100%);
+    position: relative;
+    transition: transform .2s;
+}
+
+#factions .faction_card_alliance::after {
+    /*OVERLAY*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#factions .faction_card_horde::after {
+    /*OVERLAY*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#factions .faction_card_alliance .description {
+    grid-column: 2;
+}
+
+#factions .faction_card_alliance:hover {
+    box-shadow: 0 0 40px -10px rgb(71, 154, 248);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#factions .faction_card_horde:hover {
+    box-shadow: 0 0 40px -10px rgb(250, 103, 103);
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+#factions h2 {
+    font-size: 2rem;
+    /*font-weight: 300px;*/
+    color: ivory;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#factions .faction_card_alliance p {
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    color: ivory;
+    text-align: left;
+    line-height: 1.9rem;
+}
+
+#factions .faction_card_horde p {
+    font-size: 1.2rem;
+    color: ivory;
+    text-align: left;
+    line-height: 1.9rem;
+}
+
+
+/* ----------------------------------------------------------------End of Factions Section----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------MAIN PAGE END ----------------------------------------------------------------*/
+
+.gifTest {
+    display:flex;  /*Alterado aqui -- flexbox*/
+    align-content: center;
+    margin: auto;
+    height: auto;
+    width: auto;
+}
+
+
+/*----------------------------------------------------------------RACES PAGE START ----------------------------------------------------------------*/
+
+.estrutura .content img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+
+/* ----------------------------------------------------------------GRID GERAL---------------------------------------------------------------- */
+
+.estrutura {
+    display: grid;
+    /* Minmax é para definir o mínimo que quero, a última eu quero 300px fixo sempre. */
+    grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+    grid-template-areas: "header header header" "sidenav content anuncios" "footer footer footer";
+}
+
+@media screen and (max-width: 760px) {
+    .estrutura {
+        grid-template-areas: 'header' 'sidenav' 'content' 'anuncios' 'footer';
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .estrutura {
+        grid-template-areas: 'header' 'sidenav' 'content' 'anuncios' 'footer';
+    }
+
+    .anuncios {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .estrutura {
+        grid-template-areas: 'header header header' 'sidenav content content' 'sidenav anuncios anuncios' 'footer footer footer';
+    }
+
+    .sidenav ul {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 200px;
+        padding-bottom: 100px;
+    }
+}
+
+
+/* ----------------------------------------------------------------HEADER ----------------------------------------------------------------*/
+
+header {
+    border-bottom: solid 3px;
+    grid-area: header;
+    background: rgb(31, 30, 30);
+    padding: 5px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+logo {
+    max-width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    display: block;
+    padding: 10px;
+    color: ivory;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+header li + li {
+    margin-left: 30px;
+}
+
+#header .allyheader {
+    border-color: rgb(0, 174, 255);
+}
+
+header.allyheader h1 {
+    color: rgb(0, 174, 255);
+}
+
+header.allyheader nav a:hover {
+    background: rgb(0, 174, 255);
+}
+
+header.hordeheader {
+    border-color: orangered;
+}
+
+header.hordeheader nav a:hover {
+    background: orangered;
+}
+
+header.hordeheader h1 {
+    color: orangered;
+}
+
+header h1 {
+    font-family: 'Zilla Slab Highlight', serif;
+    margin: 5px 5px 5px;
+    /*top margin is 25px - right and left margins are 10px - bottom margin is 75px*/
+    text-indent: 20px;
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    /*font-weight: 300px;*/
+    letter-spacing: 0.05rem;
+    display: inline;
+}
+
+@media (max-width: 760px) {
+    .allyheader {
+        grid-template-columns: auto;
+    }
+
+    .hordeheader {
+        grid-template-columns: auto;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .header nav a {
+        font-size: 1em;
+    }
+
+    .header li + li {
+        margin-left: 10px;
+    }
+}
+
+
+/* SIDENAV */
+
+.sidenav {
+    grid-area: sidenav;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.left {
+    grid-area: 1 / 1 / 2 /2;
+    width: fit-content;
+    margin-left: 4vw;
+}
+
+@media screen and (max-width: 1100px) {
+    .left {
+        margin-left: 1vw;
+    }
+}
+
+.right {
+    grid-area: 1 / 2 / 2 /3;
+    width: fit-content;
+    margin-right: 4vw;
+}
+
+.sidenav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 200px;
+    padding-bottom: 100px;
+    flex-wrap: nowrap;
+}
+
+.sidenav-item a {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 30px auto;
+    background: black;
+    transition: 0.1s ease-out;
+    align-items: center;
+    padding: 3px;
+}
+
+.sidenav-item a:hover {
+    background: #1940f0;
+    box-shadow: 2px 2px 10px 0 rgb(0, 183, 255);
+}
+
+
+/* CONTENT */
+
+
+/* GRID DO CONTENT */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+.content {
+    grid-area: content;
+    margin: 0 auto;
+    background: rgb(31, 30, 30);
+}
+
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
+
+.col-wide {
+    /* A coluna vai do 1 até o último, por isso -1, assim tem todas as colunas */
+    grid-column: 1 / -1;
+}
+
+.img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+figcaption {
+    color: ivory;
+    font-size: 1em;
+    text-align: center;
+    font: 'Karantina';
+}
+
+.imagem-1 {
+    /* span 2 significa que essa imagem vai ocupar 2 linhas e será alinhada no final sempre. */
+    grid-row: span 2;
+    align-self: end;
+    padding: 0 0 5px;
+}
+
+.imagem-2 {
+    align-self: end;
+    padding: 0 0 5px;
+}
+
+
+/* ESTILOS DO CONTENT */
+
+.content p {
+    margin: 25px 50px 75px;
+    /*top margin is 25px - right and left margins are 50px - bottom margin is 75px*/
+    text-indent: 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    font: 'Karantina';
+}
+
+.informacoes p + p {
+    margin-top: 30px;
+}
+
+
+/* TITULO */
+
+#azul {
+    color: rgb(0, 75, 146);
+}
+
+#red {
+    color: orangered;
+}
+
+.titulo h1 {
+    font-family: monospace;
+    letter-spacing: 0.2rem;
+    font-size: 8em;
+    font-weight: 700;
+    line-height: 1;
+    align-items: center;
+}
+
+#azul {
+    color: rgb(0, 174, 255);
+}
+
+#red {
+    color: orangered;
+}
+
+.titulo span {
+    color: ivory;
+    font-size: 2em;
+    font-style: italic;
+}
+
+
+/* DESTAQUE */
+
+.atributos {
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.atributos li {
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#redLine.atributos li + li {
+    border-top: 2px solid orangered;
+}
+
+#blueLine.atributos li + li {
+    border-top: 2px solid #006eff;
+}
+
+
+/* ANUNCIOS */
+
+.anuncios {
+    grid-area: anuncios;
+    background: transparent;
+    display: grid;
+    padding: 30px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-content: start;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 240px;
+}
+
+
+/*----------------------------------------------------------------RACES PAGE END ----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------FOOTER START ----------------------------------------------------------------*/
+
+#footer {
+    background: rgb(31, 30, 30);
+}
+
+.footerred {
+    border-top: solid 3px;
+    border-color: orangered;
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footerblue {
+    border-top: solid 3px;
+    border-color: rgb(0, 174, 255);
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#footer .section_title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: ivory;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-decoration: underline ivory;
+}
+
+#red .section_title span {
+    color: orangered;
+}
+
+#azul .section_title span {
+    color: rgb(0, 174, 255);
+}
+
+#azul h2 span {
+    color: rgb(0, 174, 255);
+}
+
+#red h2 span {
+    color: orangered;
+}
+
+#footer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: ivory;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#footer .footicon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .footitem {
+}
+
+#footer .footitem img {
+    filter: grayscale(1);
+    border: 1px solid black;
+}
+
+#footer p {
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+}
+
+
+/*----------------------------------------------------------------FOOTER END ----------------------------------------------------------------*/
+
+
+/* Keyframes*/
+
+@keyframes intro_reveal {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes intro_text {
+    100% {
+        color: antiquewhite;
+    }
+}
+
+@keyframes intro_text_Red {
+    100% {
+        color: orangered;
+        font-weight: 500;
+    }
+}
+
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+/* End of Keyframes*/
+
+
+/*----------------------------------------------------------------START OF QUIZZ ----------------------------------------------------------------*/
+
+.quizzbody {
+    background-image: url("../images/intro.22c2b86025af.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+h1.section_title {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+
+}
+
+fieldset {
+    width: 70%;
+    margin: 10%;
+    background-color: rgba(49, 49, 49, 0.87);
+    border-radius: 5px;
+    padding: 20px;
+    border-color: #d000ff;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+legend {
+    margin-bottom: 0;
+    margin-left: 16px;
+    font-size: 3rem;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+label {
+    line-height: 1rem;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: oblique;
+    color: ivory;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 300px) {
+    label.radio_container,
+    label {
+        line-height: 20px;
+    }
+}
+
+label span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orangered;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid orangered;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #4e4d4d5d;
+    border-radius: 10px;
+    width: 180px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    background-color: rgba(189, 187, 184, 0.5);
+    border: 5px solid orangered;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    width: 60%;
+}
+
+::placeholder {
+    color: rgb(15, 14, 14);
+}
+
+input[type="image"] {
+    width: auto;
+}
+
+select {
+    width: 10%;
+    padding: 10px 22px;
+    border: none;
+    border-bottom: 2px solid orangered;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(66, 66, 66, 0.5);
+}
+
+strong {
+    color: ivory;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: black;
+    color: ivory;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: orangered;
+    color: black;
+}
+
+.inner {
+    width: 50vw;
+}
+
+
+/* Customize the label (the container) */
+
+.radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 10px;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_container:hover input ~ .checkmark {
+    background-color: orangered;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_container input:checked ~ .checkmark {
+    background-color: black;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: orangered;
+}
+
+
+/*---------------------------------------------------*/
+
+
+/*Checkbox*/
+
+
+/* Style the checkmark/indicator */
+
+#check .radio_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*----------------------------------------------------------------END OF QUIZZ ----------------------------------------------------------------*/
+
+video {
+    margin-left: 20px;
+    display: flex;
+    width: 70%;
+}
+
+
+/*INFO*/
+
+textarea {
+    resize: none; /*Was disable*/
+    width: 90%;
+    height: 150px;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+th {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+td {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    font-size: 1.5rem;
+    background-color: orangered;
+}
+
+tr:nth-child(odd) {
+    font-size: 1.5rem;
+    color: ivory;
+    background-color: rgb(0, 75, 146);
+}
+
+.centrar .row {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding: 2vw;
+}
+
+.grey {
+    transition: width 2s;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.grey img {
+    width: 100%;
+    height: auto;
+}
+
+.grey:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+.coming:hover{
+    z-index: 1;
+    /*transform: rotate3d(1, 1, 0, 45deg);*/
+    transform: scale(1.4);
+
+}
+
+@keyframes grey {
+    0% {
+        width: 250px;
+    }
+    50% {
+         width: 225px;;
+    }
+    100% {
+        width: 160px;;
+    }
+}

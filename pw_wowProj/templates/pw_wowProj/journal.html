@@ -1,0 +1,16 @@
+{% extends 'pw_wowProj/base.html' %}
+    {% block main %}
+   <h3>Raids</h3>
+        <ul>
+        
+        {% for item in raid %}
+        <li>
+        <a href="{% url 'pw_wowProj:raid' item.id %}">
+        {{ item.nome }}({{ item.difficulty.codigo }})
+        </a>
+        </li>
+        {% endfor %}
+
+
+        </ul>
+    {% endblock %}

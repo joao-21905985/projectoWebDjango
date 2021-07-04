@@ -1,0 +1,32 @@
+{% extends 'pw_wowProj/base_quizz.html' %}
+
+{% load static %}
+
+{% block main %}
+    <fieldset>
+    <legend>Welcome, {{ request.user.username}}</legend>
+    <h3>Here you can CRUD contacts</h3>
+
+
+    {% for contacto in contactos %}
+        <fieldset>
+        <legend>
+            {{ contacto.nome }}
+        </legend>
+        </fieldset>
+
+
+    {% endfor %}
+
+
+    </fieldset>
+    <h1></h1>
+
+    <ul>
+        <li>Username: {{ request.user.username }}</li>
+        <li>Email: {{ request.user.email }}</li>
+    </ul>
+
+    <a href="{% url 'users:logout' %}">Log Out</a>
+
+{% endblock %}
