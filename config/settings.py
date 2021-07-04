@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
     'pw_wowProj',
-    'users'
+    'users',
+    'quizz',
+    'results',
+    'questions'
 ]
 
 MIDDLEWARE = [
@@ -62,7 +65,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'quizz/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
