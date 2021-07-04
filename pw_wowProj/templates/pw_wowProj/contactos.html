@@ -5,52 +5,32 @@
 
     <section id="quizz">
         <!--QUIZZ FORMS-->
-        <h1 class="section_title">Contactos</h1>
+        <h1 class="section_title">Feedback</h1>
 
-        <form action="mailto:XXXXXX@gmail.com" method="post" name="Form PW">
+       <form method="post" class="was-validated">
+           {% csrf_token %}
+           <fieldset>
 
-            <fieldset>
-                <legend>Identification:</legend>
-                <label>
-                    Insert name here: <span>*</span> <input type="text" name="name"
-                                                            placeholder="Yer name here mate..." autocomplete="off"
-                                                            maxlength="20" autofocus required><br>
-                </label>
+           <div class="mb-3">
+               <label for="exampleInputName1" class="form-label">Name</label>
+               <input name="name" type="name" class="form-control" id="exampleInputName1" required>
+           </div>
 
-                <label>
-                    Insert second name here: <span>*</span> <input type="text" name="secondname"
-                                                                   placeholder="Yer second name here mate..."
-                                                                   autocomplete="off" maxlength="20" required><br>
-                </label>
+           <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Email address</label>
+               <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+           </div>
+               <br>
+           <div class="mb-3">
+               <label for="subject" class="form-label">Feedback</label>
+               <br>
 
-                <label>
-                    Insert birth-date here: <span>*</span> <input type="date" name="birthdate"
-                                                                   placeholder=""
-                                                                   autocomplete="off" maxlength="20" required><br>
-                </label>
-
-                <label>
-                    Insert your email: <span>*</span><input type="email" name="email"
-                                                            placeholder="Insert valid email..."
-                                                            autocomplete="off" required><br>
-                </label>
-
-                <label>
-                    Insert your phone number:
-                    <input type="tel" name="telefone" placeholder="Ex: 99999-99-99" size="11" maxlength="11"
-                           autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"> <small>(Optional)</small><br><br>
-                </label>
-
-                <center>
-                    <br><br>
-                    <hr>
-                    <br><br>
-                    <input type="submit" value="Submit All" title="Submit Answers" alt="Submit">
-                    <input type="reset" value="Reset All" title="Reset Fields">
-                    <br><br>
-                </center>
-            </fieldset>
-        </form>
+               <textarea class="form-control" id="subject" name="subject" placeholder="Write here your feedback" cols="30" rows="10" required></textarea>
+           </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+           </fieldset>
+       </form>
     </section>
 
 {% endblock %}
