@@ -1,0 +1,21 @@
+{% extends 'pw_wowProj/base_quizz.html' %}
+
+{% load static %}
+
+{% block main %}
+    <fieldset>
+    <legend>Login</legend>
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <form action="{% url 'users:login' %}" method="POST">
+    {% csrf_token%}
+        <center>
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="submit" value="Login"></center>
+    </form>
+    </fieldset>
+
+{% endblock %}

@@ -13,7 +13,10 @@ urlpatterns = [
     path('info', views.info_page_view, name='info'),
     path('quizz', views.quizz_page_view, name='quizz'),
     path('soon', views.soon_page_view, name='soon'),
-    path('contactos', views.contactos_page_view, name='contactos'),
-    path('feedback', views.feedback_page_view, name='feedback')
+    path('feedback', views.contactos_page_view, name='feedback'),
+    path('registo', views.registo_page_view, name='registo'),
+    path('journal', views.journal_view, name='journal'),
+    path('raid/<int:raid_id>', views.raid_view, name='raid')
+
 
 ]

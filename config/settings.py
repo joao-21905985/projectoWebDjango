@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'pw_wowProj'
+    'pw_wowProj',
+    'users'
 ]
 
 MIDDLEWARE = [

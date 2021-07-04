@@ -904,10 +904,10 @@ h1.section_title {
 fieldset {
     width: 70%;
     margin: 10%;
-    background-color: #3131317a;
+    background-color: rgba(49, 49, 49, 0.87);
     border-radius: 5px;
     padding: 20px;
-    border-color: orangered;
+    border-color: #d000ff;
 }
 
 textarea {
