@@ -277,10 +277,12 @@ body.redback {
 }
 #journal{
     padding-bottom: 20rem;
+    background-color: black;
 }
 
 #journal .container{
    min-height: 50vh;
+    background-color: black;
 }
 
 #journal .journal_top h3,h2 {
@@ -308,6 +310,11 @@ body.redback {
 
 #journal .journal_top li {
     text-decoration-color: whitesmoke;
+    text-align: center;
+    font-size: large;
+}
+#journal .container li {
+    color: whitesmoke;
     text-align: center;
     font-size: large;
 }
