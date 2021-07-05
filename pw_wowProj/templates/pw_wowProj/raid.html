@@ -1,23 +1,27 @@
 {% extends 'pw_wowProj/base.html' %}
 
 {% block main %}
-    <h1>Journal</h1>
-    <br>
-    <h3>{{ raid.nome }}({{ raid.difficulty.codigo }})</h3>
-    <ul>
-        <li>  Dificuldade : {{ raid.difficulty.dificuldade }}</li>
-        <li> Level : {{ raid.level }}</li>
-    </ul>
+    <article id="journal">
+        <div class="journal container">
+            <div class="journal_top">
+                <h1>Journal</h1>
+                <br>
+                <h3>{{ raid.nome }}({{ raid.difficulty.codigo }})</h3>
+                <ul>
+                    <li> Dificuldade : {{ raid.difficulty.dificuldade }}</li>
+                    <li> Level : {{ raid.level }}</li>
+                </ul>
 
-    <h2>Raiders</h2>
-    <ul>
-        {% for raiders in raiders %}
-            <li>{{ raiders }}</li>
-        {% empty %}
-            <li>No raiders</li>
-        {% endfor %}
-
-    </ul>
-
+                <h2>Raiders</h2>
+                <ul>
+                    {% for raiders in raiders %}
+                        <li>{{ raiders }}</li>
+                    {% empty %}
+                        <li>No raiders</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </article>
 
 {% endblock %}
