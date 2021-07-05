@@ -32,14 +32,14 @@ li {
 }
 
 body.blueback {
-    background-image: url(../images/blue_ally.jpeg);
+    background-image: url("../images/blue_ally.f8b7c4cb122a.jpeg");
     background-size: cover;
     background-position: top center;
     position: relative;
 }
 
 body.redback {
-    background-image: url(../images/background3.jpg);
+    background-image: url("../images/background3.5ad3afca8047.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -69,13 +69,13 @@ body.redback {
 }
 
 #soon{ /*Background do soon*/
-    background-image: url(../images/intro.jpg);
+    background-image: url("../images/intro.22c2b86025af.jpg");
     background-size: cover;
     background-position: top center;
 }
 
 #intro {
-    background-image: url(../images/intro.jpg);
+    background-image: url("../images/intro.22c2b86025af.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -899,7 +899,7 @@ iframe {
 /*----------------------------------------------------------------START OF QUIZZ ----------------------------------------------------------------*/
 
 .quizzbody {
-    background-image: url(../images/intro.jpg);
+    background-image: url("../images/intro.22c2b86025af.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
