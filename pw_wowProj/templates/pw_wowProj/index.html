@@ -1,5 +1,5 @@
 {% extends 'pw_wowProj/base.html' %}
-{%  load static %}
+{% load static %}
 {% block main %}
     <!--Intro Section-->
     <section id="intro">
@@ -10,6 +10,9 @@
                 <center>
                     <a href="https://worldofwarcraft.com" type="button" class="buttonIntro">
                         Official WebSite
+                    </a><br>
+                    <a href="{% url 'pw_wowProj:admin' %}" type="button" class="buttonIntro">
+                        Admin Login
                     </a>
                 </center>
             </div>
@@ -80,7 +83,7 @@
                             politics.
                         </p>
 
-                        <a href="{% url 'pw_wowProj:orc'%}" type="button" class="button">More...</a>
+                        <a href="{% url 'pw_wowProj:orc' %}" type="button" class="button">More...</a>
                     </div>
                 </div>
 
@@ -103,7 +106,7 @@
                             corners of the world.
                         </p>
 
-                        <a href="{% url 'pw_wowProj:human'%}" type="button" class="button">More...</a>
+                        <a href="{% url 'pw_wowProj:human' %}" type="button" class="button">More...</a>
                     </div>
                 </div>
             </div>

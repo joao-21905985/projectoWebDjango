@@ -16,7 +16,7 @@ urlpatterns = [
     path('feedback', views.contactos_page_view, name='feedback'),
     path('registo', views.registo_page_view, name='registo'),
     path('journal', views.journal_view, name='journal'),
-    path('raid/<int:raid_id>', views.raid_view, name='raid')
-
+    path('raid/<int:raid_id>', views.raid_view, name='raid'),
+    path('admin', views.admin, name='admin')
 
 ]

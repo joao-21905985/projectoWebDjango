@@ -93,3 +93,6 @@ def raid_view(request, raid_id):
         "raiders": r.Raiders.all(),
         "benched": Raider.objects.exclude(raids=r)
     })
+
+def admin(request):
+    return render(request, 'pw_wowProj/admin.html')
