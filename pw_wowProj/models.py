@@ -1,5 +1,9 @@
 from django.db import models
+from django.core.validators import RegexValidator
+from django.db import models
 
+from django.utils.translation import gettext_lazy as _
+from datetime import datetime as date
 
 
 
@@ -81,3 +85,5 @@ class Raider(models.Model):
 
     def __str__(self):
         return f"{self.player_name} [{self.charclass}:{self.role}]"
+
+

@@ -4,51 +4,34 @@
 {% block main %}
 
     <section id="quizz">
-        <!--CONTRIBUIÇÕES-->
-        <form action="mailto:joaoferre195@gmail.com" method="post" name="Sugestões Quizz">
-            <fieldset>
-                <legend>Feedback</legend>
+        <!--QUIZZ FORMS-->
+        <h1 class="section_title">Feedback</h1>
 
-                <label>Gostou do quizz?
-                    <select name="avaliação" value="N/A">
-                        <option value="N/A">N/A</option>
-                        <option value="Muito">Muito</option>
-                        <option value="Mais ou menos">Mais ou menos</option>
-                        <option value="Péssimo">Péssimo</option>
-                    </select></label><br>
+       <form method="post" class="was-validated">
+           {% csrf_token %}
+           <fieldset>
 
-                <fieldset>
-                    <label> Caso já tenha jogado wow, conte-nos qual a sua melhor experiência ingame.
-                        <br>
-                        <center>
-                            <textarea name="sugestões" rows="20" cols="50"
-                                      placeholder="Escreva aqui a sua história..."></textarea>
-                        </center>
-                    </label>
-                    <br>
+           <div class="mb-3">
+               <label for="exampleInputName1" class="form-label">Name</label>
+               <input name="name" type="name" class="form-control" id="exampleInputName1" required>
+           </div>
 
-                    <label>
-                        Data de Visita:
-                        <input type="date" id="year" name="year" width="40px" max="2021-12-31"><br>
-                    </label>
+           <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Email address</label>
+               <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+           </div>
 
-                    <label>
-                        Autor:
-                        <input type="text" name="nome"
-                               placeholder="O seu nome..."
-                               autocomplete="off" maxlength="20">
-                    </label>
+               <br>
+           <div class="mb-3">
+               <label for="subject" class="form-label">Feedback</label>
+               <br>
 
-                    <center>
-                        <input type="submit" value="Submit" title="Submit Answers" alt="Submit">
-                    </center>
-
-
-                </fieldset>
-            </fieldset>
-        </form>
-
-
+               <textarea class="form-control" id="subject" name="subject" placeholder="Write here your feedback" cols="30" rows="10" required></textarea>
+           </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+           </fieldset>
+       </form>
     </section>
 
 {% endblock %}

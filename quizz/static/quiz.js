@@ -58,7 +58,7 @@ $.ajax({
     type: 'GET',
     url: `${url}data`,
     success: function (response){
-        //console.log(response)
+        console.log(response)
         let data = response.data
         data.forEach(element =>{
             for (const [question, answers] of Object.entries(element)){
@@ -111,7 +111,7 @@ const sendData = () =>{
             console.log(results)
             quizForm.classList.add('not-visible')
 
-            scoreBox.innerHTML = `${response.passed ? 'GZ' : 'gl next time :('} Your result is ${response.score.toFixed(2)} %`
+            scoreBox.innerHTML = `${response.passed ? 'GZ' : 'gl next time'} Your result is ${response.score.toFixed(2)} %`
 
             results.forEach(res=>{
                 const resDiv = document.createElement("div")

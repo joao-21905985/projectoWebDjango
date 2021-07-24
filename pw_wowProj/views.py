@@ -71,6 +71,17 @@ def contactos_page_view(request):
     return render(request, 'pw_wowProj/contactos.html')
 
 
+def feeback_page_view(request):
+    #isto é a contacts page, caguei em mudar o nome
+    if request.method=='POST':
+        feedback=Feedback()
+        feedback.feedbackName=request.POST.get('name')
+        feedback.feedbackEmail=request.POST.get('email')
+        feedback.feedbackSubject=request.POST.get('subject')
+        feedback.save()
+        return HttpResponseRedirect(reverse('pw_wowProj:index'))
+    return render(request, 'pw_wowProj/contactos.html')
+
 
 def registo_page_view(request):
     form = ContactoForm(request.POST or None)
