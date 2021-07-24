@@ -1,4 +1,4 @@
-.not-visible{
+.not-visible {
     display: none;
 }
 
@@ -8,4 +8,13 @@
     background-position: top center;
     position: relative;
     z-index: 1;
+}
+
+.container h1 {
+    font-family: monospace;
+    letter-spacing: 0.2rem;
+    font-size: 8em;
+    font-weight: 700;
+    line-height: 1;
+    align-items: center;
 }

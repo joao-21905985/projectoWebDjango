@@ -8,6 +8,8 @@
     margin: 0;
 }
 
+
+
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -21,6 +23,7 @@ a {
 li {
     list-style: none;
 }
+
 
 .mainPage body {
     background-color: black;
@@ -272,7 +275,49 @@ body.redback {
     /*font-weight: 300px;*/
     letter-spacing: 0.05rem;
 }
+#journal{
+    padding-bottom: 20rem;
+    background-color: black;
+}
 
+#journal .container{
+   min-height: 50vh;
+    background-color: black;
+}
+
+#journal .journal_top h3,h2 {
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    color: orangered;
+    text-decoration: underline;
+}
+
+#journal .journal_top h1 {
+
+    color: orangered;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#journal .journal_top a {
+    color: whitesmoke;
+    animation: hover;
+}
+#journal .journal_top a:hover{
+    color: orangered;
+}
+
+#journal .journal_top li {
+    text-decoration-color: whitesmoke;
+    text-align: center;
+    font-size: large;
+}
+#journal .container li {
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+}
 
 /*FACTION CARDS*/
 
