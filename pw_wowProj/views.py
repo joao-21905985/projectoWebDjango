@@ -59,16 +59,6 @@ def quizz_page_view(request):
     return render(request, 'pw_wowProj/quizz.html')
 
 
-def contactos_page_view(request):
-    #isto é a feedback page, caguei em mudar o nome
-    if request.method=='POST':
-        feedback=Feedback()
-        feedback.feedbackName=request.POST.get('name')
-        feedback.feedbackEmail=request.POST.get('email')
-        feedback.feedbackSubject=request.POST.get('subject')
-        feedback.save()
-        return HttpResponseRedirect(reverse('pw_wowProj:index'))
-    return render(request, 'pw_wowProj/contactos.html')
 
 
 def feeback_page_view(request):
@@ -104,6 +94,3 @@ def raid_view(request, raid_id):
         "raiders": r.Raiders.all(),
         "benched": Raider.objects.exclude(raids=r)
     })
-
-def admin(request):
-    return render(request, 'pw_wowProj/admin.html')
