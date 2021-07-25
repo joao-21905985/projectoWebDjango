@@ -8,9 +8,8 @@ from results.models import Result
 
 # Create your views here.
 
-class QuizListView(ListView):
-    model = Quiz
-    template_name = 'main.html'
+def main_view(request) :
+    return render(request, 'main.html' , {'object_list': Quiz.objects.all()})
 
 def quiz_view(request, pk):
     quiz = Quiz.objects.get(pk=pk)
