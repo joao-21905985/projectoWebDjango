@@ -157,11 +157,11 @@ A aplicação continuará em desenvolvimento pelo que novas funcionalidades e al
 ### Nota Esperada
 
 <details>
-  <summary>Spoiler warning</summary>
+  <summary><h4>Spoiler Alert Below</h4></summary>
   
   Face ao trabalho efetuado apontamos que a nossa nota esteja entre :
   
-  <h1>"20 Valores sff" </h1>
+ <center><h1> 20 Valores </h1><center>
  
   
 </details>
