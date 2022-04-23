@@ -161,9 +161,8 @@ A aplicação continuará em desenvolvimento pelo que novas funcionalidades e al
   
   Face ao trabalho efetuado apontamos que a nossa nota esteja entre :
   
- ```javascript
- !!("20 Valores sff")!!
- ```
+  <h1>"20 Valores sff" </h1>
+ 
   
 </details>
 
