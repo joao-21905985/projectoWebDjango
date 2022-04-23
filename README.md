@@ -162,7 +162,7 @@ A aplicação continuará em desenvolvimento pelo que novas funcionalidades e al
   Face ao trabalho efetuado apontamos que a nossa nota esteja entre :
   
  ```javascript
- print("20 Valores sff");
+ !!("20 Valores sff")!!
  ```
   
 </details>
